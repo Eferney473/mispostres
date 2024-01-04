@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">      <!--caracteres especiales-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Postres</title>
+    <meta name="description" content="Página web de Postres">
+
+    <!--PREFETCH -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+
+    <!--PRELOAD   xa tener un mejor performance(carga del sitio web)-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=
+    PT+Sans:ital,wght@0,700;1,400&family=Ruwudu&display=swap" crossorigin="crossorigin" as="font" >
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=
+                PT+Sans:ital,wght@0,700;1,400&family=Ruwudu&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Página<span class="logo__bold">De Postres</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="talleres.html" class="navegacion__enlace">Talleres</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>                     <!--centrar contenido-->
+
+        <div class="header__texto">
+            <h2>Página de Postres </h2>
+            <p class="no-margin">Aprende aquí las mejores recetas para tus postres</p>
+        </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="pagina">
+            <h3>Nuestra Página</h3>
+
+            <article class="entrada">       <!--xa las noticias -->
+                <div class="entrada__imagen">
+
+                    <!--imagenes con webp-->
+                    <picture>
+                        <source srcset="img/imagen1.webp" type="image/webp">
+                        <img src="img/imagen1.png" alt="imagen pagina"/>
+                    </picture>
+                    
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Clases de Postres</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Incidunt ratione, cupiditate maxime maiores neque aliquam
+                         nam accusantium pariatur voluptate ad! 
+                    </p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">       <!--xa las noticias -->
+                <div class="entrada__imagen">
+                    <img src="img/imagen2.jpg" alt="imagen pagina" width="100%"/>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Exquisita Receta de Postre de Cerezas</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Incidunt ratione, cupiditate maxime maiores neque aliquam
+                         nam accusantium pariatur voluptate ad! 
+                    </p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+
+            <article class="entrada">       <!--xa las noticias -->
+                <div class="entrada__imagen">
+                    <img src="img/imagen3.jpg" alt="imagen pagina" />
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Beneficios de comer Postres</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Incidunt ratione, cupiditate maxime maiores neque aliquam
+                         nam accusantium pariatur voluptate ad! 
+                    </p>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar">             <!--cuando es una barra mas pña-->
+            <h3>Nuestros Talleres</h3>
+            <ul class="talleres no-padding">                             <!--lista no ordenada q agrega viñetas, <ol> agrega numeros-->
+                <li class="widget-taller">       <!-- widget una pña parte de algo mas grande-->
+                    <h4 class="no-margin">Tipos de Postres</h4>
+                    <p class="widget-taller__label">Precio:
+                        <span class="widget-curso__info">Gratis</span>
+                    </p>
+                    <p class="widget-taller__label">Cupos: :
+                        <span class="widget-taller__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información acerca de Nuestros Talleres</a>
+                </li>
+
+                <li class="widget-taller">       <!-- widget una pña parte de algo mas grande-->
+                    <h4 class="no-margin">Recetas de Postres para Principiantes</h4>
+                    <p class="widget-taller__label">Precio:
+                        <span class="widget-taller__info">Gratis</span>
+                    </p>
+                    <p class="widget-taller__label">Cupos: :
+                        <span class="widget-taller__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información acerca de Nuestros Talleres</a>
+                </li>
+
+                <li class="widget-taller">       <!-- widget una pña parte de algo mas grande-->
+                    <h4 class="no-margin">Técnicas del Chocolate</h4>
+                    <p class="widget-taller__label">Precio:
+                        <span class="widget-taller__info">Gratis</span>
+                    </p>
+                    <p class="widget-taller__label">Cupos: :
+                        <span class="widget-taller__info">20</span>
+                    </p>
+                    <a href="entrada.html" class="boton boton--secundario">Más Información acerca de Nuestros Talleres</a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">            <!--xa q expanda el color a las orillas-->
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Página <span class="logo__bold">De Postres</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="talleres.html" class="navegacion__enlace">Talleres</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>    
+    </footer>
+</body>
+</html>
